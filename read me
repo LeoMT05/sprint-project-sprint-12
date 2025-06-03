@@ -1,0 +1,79 @@
+ Rusty Bargain Used Car Price Prediction
+Rusty Bargain, a used car sales service, is developing a mobile app to attract new customers. One of its key features is an instant estimate of a car’s market value. This project builds a machine learning model that predicts used car prices based on historical technical specifications, trim versions, and other car attributes.
+
+ Project Goals
+Build and evaluate regression models to predict car prices
+
+Optimize for:
+
+Prediction quality (low RMSE)
+
+Prediction speed
+
+Training time
+
+ Dataset
+The dataset contains technical details of used cars, including:
+
+Vehicle type
+
+Year of registration
+
+Model
+
+Fuel type
+
+Gearbox type
+
+Brand
+
+Damage history
+
+Price (target)
+
+Unnecessary columns like NumberOfPictures and PostalCode were removed.
+
+🛠️ Steps Performed
+Data Preprocessing
+
+Removed irrelevant features
+
+Handled missing values
+
+Filtered out unrealistic registration years
+
+One-hot encoded categorical features
+
+Split the data into training, validation, and test sets
+
+Model Training and Evaluation
+
+Trained models: Linear Regression, Decision Tree, Random Forest, LightGBM
+
+Evaluated models on:
+
+RMSE (Root Mean Squared Error)
+
+Prediction time
+
+Training time
+
+Hyperparameter Tuning
+
+Optimized model parameters (e.g., tree depth, number of estimators)
+
+Final Model Selection
+
+Compared models based on performance
+
+Selected the best-performing model for final testing
+
+ Libraries Used
+pandas, numpy
+
+scikit-learn
+
+lightgbm
+
+Conclusion
+The project concludes with a trained and tested model capable of providing fast and reasonably accurate car price estimates, suitable for integration into the Rusty Bargain app.
